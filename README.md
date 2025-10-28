@@ -1,5 +1,7 @@
 # My build of dwl - dwm for Wayland
+
 ### My personal dwl build - modification and configuration
+configure config.h to your liking
 
 My other dotfiles are in https://github.com/ruano1983/dotfiles
 
