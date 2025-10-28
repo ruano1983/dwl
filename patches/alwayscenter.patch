@@ -1,0 +1,25 @@
+--- dwl-a/dwl.c	2025-10-12 19:52:02.503397014 +0200
++++ dwl-b/dwl.c	2025-10-12 19:51:47.057386799 +0200
+@@ -499,6 +499,11 @@
+ 	int i;
+ 	const Rule *r;
+ 	Monitor *mon = selmon, *m;
++	
++	if (mon) {
++          c->geom.x = (mon->w.width - c->geom.width) / 2 + mon->m.x;
++          c->geom.y = (mon->w.height - c->geom.height) / 2 + mon->m.y;
++          }
+ 
+ 	c->isfloating = client_is_float_type(c);
+ 	if (!(appid = client_get_appid(c)))
+@@ -2048,6 +2053,10 @@
+ 	 * try to apply rules for them */
+ 	if ((p = client_get_parent(c))) {
+ 		c->isfloating = 1;
++		if (p->mon) {
++			c->geom.x = (p->mon->w.width - c->geom.width) / 2 + p->mon->m.x;
++			c->geom.y = (p->mon->w.height - c->geom.height) / 2 + p->mon->m.y;
++		}
+ 		setmon(c, p->mon, p->tags);
+ 	} else {
+ 		applyrules(c, true);
