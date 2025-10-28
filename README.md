@@ -4,6 +4,10 @@
 My other dotfiles are in https://github.com/ruano1983/dotfiles
 
 ![](/misc/1761656709_grim.png)
+
+### Status bar
+I use eww for the status bar, it shows various information such as cpu, temp, ram, disk, wifi, bluetooth, linux ver, volume, date, even kblayout provided by dwl's `kblayout patch`
+
 ### Patches applied
 1. [cursortheme](https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/cursortheme/cursortheme.patch)
 2. [autostart](https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/autostart/autostart-0.7.patch)
