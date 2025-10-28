@@ -16,4 +16,19 @@ My other dotfiles are in https://github.com/ruano1983/dotfiles
 9. [focusdir](https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/focusdir/focusdir.patch)
 10. [kblayout](https://codeberg.org/dwl/dwl-patches/src/branch/main/patches/kblayout/kblayout.patch)
 
+### Building dwl v0.7
+dwl has the following dependencies:
+
+    libinput
+    wayland
+    wlroots0.18 (compiled with the libinput backend)
+    xkbcommon
+    wayland-protocols (compile-time only)
+    pkg-config (compile-time only)
+
+dwl has the following additional dependencies if XWayland support is enabled:
+
+    libxcb
+    libxcb-wm
+    wlroots0.18 (compiled with X11 support)
 
