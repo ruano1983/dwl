@@ -1,2 +1,2 @@
 # dwl
-My dwl modification and configuration
+My dwl personal modification and configuration
