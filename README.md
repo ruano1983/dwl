@@ -38,3 +38,5 @@ dwl has the following additional dependencies if XWayland support is enabled:
     libxcb-wm
     wlroots0.18 (compiled with X11 support)
 
+To enable XWayland, you should uncomment its flags in `config.mk`.
+
