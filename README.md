@@ -1,6 +1,9 @@
 # My build of dwl - dwm for Wayland
-
 ### My personal dwl build - modification and configuration
+
+⚠️ Migrated to https://codeberg.org
+This project has migrated to [https://codeberg.org](https://codeberg.org/ruano1983/dwl).
+
 configure config.h to your liking
 
 My other dotfiles are in https://github.com/ruano1983/dotfiles
